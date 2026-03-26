@@ -1,0 +1,15 @@
+2026-03-04 12:49:41 | SUCCESS | test_pet_api.py:20 | pet_id:1|pet created successfully
+2026-03-04 12:49:41 | SUCCESS | test_pet_api.py:20 | pet_id:2|pet created successfully
+2026-03-04 12:49:42 | SUCCESS | test_pet_api.py:20 | pet_id:3|pet created successfully
+2026-03-04 12:49:42 | SUCCESS | test_pet_api.py:20 | pet_id:4|pet created successfully
+2026-03-04 12:49:42 | SUCCESS | test_pet_api.py:20 | pet_id:5|pet created successfully
+2026-03-04 12:49:42 | SUCCESS | test_pet_api.py:20 | pet_id:6|pet created successfully
+2026-03-04 12:49:43 | SUCCESS | test_pet_api.py:29 | pet_id:1|Fetched pet by id successfully
+2026-03-04 12:49:43 | SUCCESS | test_pet_api.py:29 | pet_id:2|Fetched pet by id successfully
+2026-03-04 12:49:43 | SUCCESS | test_pet_api.py:29 | pet_id:3|Fetched pet by id successfully
+2026-03-04 12:49:43 | SUCCESS | test_pet_api.py:29 | pet_id:4|Fetched pet by id successfully
+2026-03-04 12:49:43 | SUCCESS | test_pet_api.py:29 | pet_id:5|Fetched pet by id successfully
+2026-03-04 12:49:44 | SUCCESS | test_pet_api.py:29 | pet_id:6|Fetched pet by id successfully
+2026-03-04 12:49:44 | SUCCESS | test_pet_api.py:37 | status:available|Fetched pet by status successfully
+2026-03-04 12:49:45 | SUCCESS | test_pet_api.py:37 | status:pending|Fetched pet by status successfully
+2026-03-04 12:49:45 | SUCCESS | test_pet_api.py:37 | status:sold|Fetched pet by status successfully

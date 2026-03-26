@@ -1,5 +1,5 @@
 import pytest
-
+from logger_config import app_logger
 @pytest.mark.pet
 class TestPetApi:
 
@@ -17,6 +17,7 @@ class TestPetApi:
         assert response.json()["id"] == my_pet.id
         assert response.json()["name"] == my_pet.name
 
+        app_logger.success(f"pet_id:{pet_id}|pet created successfully")
 
     @pytest.mark.parametrize("pet_id",[1,2,3,4,5,6])
     def test_get_pet_by_id(self,pet_id,pet_api):
@@ -25,6 +26,7 @@ class TestPetApi:
         assert response.status_code == 200
         assert response.json()["id"] == pet_id
 
+        app_logger.success(f"pet_id:{pet_id}|Fetched pet by id successfully")
 
     @pytest.mark.parametrize("status",["available","pending","sold"])
     def test_get_pets_by_status(self,status,pet_api):
@@ -32,6 +34,7 @@ class TestPetApi:
 
         assert response.status_code == 200
         assert len(response.json()) > 1
+        app_logger.success(f"status:{status}|Fetched pet by status successfully")
 
     @pytest.mark.parametrize("pet_id",[1,2,3,4])
     def test_delete_pet(self,pet_api,pet_id):
